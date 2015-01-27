@@ -1,3 +1,8 @@
 language: clojure
 jdk: openjdk7
 script: lein build
+after_success: ./deploy-ghpages.sh
+env:
+  global:
+    - GH_REF: github.com/jdmarble/dailyprogrammer.git
+    - secure: "TM4VOQYxmpubL0PiaY8gqZWRLkyAyl3zs3KicqquGTHDh3StdDrhueONX4VDlh46E+PKGwKZLqnVku8lbqtDBXFRciGgEyMwVRi+Iwx9M2BKBz0iIOIZaGqFX9BgDkcGEFbYQW3QTDWi5PsLaKTJIOLpDt3rokzUoE9Al+MRj38="
