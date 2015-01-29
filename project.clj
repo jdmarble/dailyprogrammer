@@ -14,7 +14,7 @@
   :source-paths ["src"]
 
   :marginalia {:javascript ["out/goog/base.js"
-                            "http://fb.me/react-0.9.0.js"	
+                            "//fb.me/react-0.9.0.js"
 			    "daily.js"]}
 
   :cljsbuild {
